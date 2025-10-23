@@ -17,9 +17,15 @@ const SignUp = () => {
         const email = event.target.email.value;
         const password = event.target.password.value;
 
+        // // reset error & succes
+        // setError('');
+        // setSuccess(false);
+
         createUser(email, password)
             .then(result => {
                 console.log('after creation of a new user', result.user)
+                setSuccess(true);
+                event.target.reset();
             })
             .catch(error => {
                 console.log('error happend', error.message)
@@ -28,35 +34,12 @@ const SignUp = () => {
 
     }
 
-    // const handleRegister = (event) => {
-
-    //     event.preventDefault();
-    //     const email = event.target.email.value;
-    //     const password = event.target.password.value;
-    //     console.log('register clicked', email, password);
-
     //     // const passwordPattern = /^.{6,}$/;
     //     // if (!passwordPattern.test(password)) {
     //     //     console.log("password didn't match.")
     //     //     setError('Password must be at least 6 characters.')
     //     //     return;
     //     // }
-
-    //     // reset error & succes
-    //     // setError('');
-    //     // setSuccess(false);
-
-    //     createUserWithEmailAndPassword(auth, email, password)
-    //         .then(result => {
-    //             console.log('after creation of a new user', result.user)
-    //             setSuccess(true);
-    //             event.target.reset()
-    //         })
-    //         .catch(error => {
-    //             console.log('error happend', error.message)
-    //             setError(error.message);
-    //         })
-    // }
 
 
     return (
