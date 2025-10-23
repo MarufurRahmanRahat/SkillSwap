@@ -18,6 +18,7 @@ const Login = () => {
         signInUser(email,password)
         .then(result => {
                 console.log('after login of a new user', result.user)
+                event.target.reset();
             })
             .catch(error => {
                 console.log('error happend', error.message)

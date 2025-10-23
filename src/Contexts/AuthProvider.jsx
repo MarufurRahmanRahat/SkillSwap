@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../Firebase/Firebase.init';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { onAuthStateChanged } from 'firebase/auth/cordova';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 
 const AuthProvider = ({children} ) => {
+
+    const [user,setUser] = useState(null)
 
     const createUser = (email,password) => {
         return createUserWithEmailAndPassword(auth, email, password);
@@ -13,6 +15,10 @@ const AuthProvider = ({children} ) => {
 
     const signInUser = (email,password) => {
         return signInWithEmailAndPassword(auth,email,password);
+    }
+
+    const signOutUSer = () => {
+        return signOut(auth);
     }
 
     onAuthStateChanged(auth ,(currentUser) => {
@@ -23,9 +29,21 @@ const AuthProvider = ({children} ) => {
         }
     })
 
+    useEffect(() =>{
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) =>{
+            console.log('current user in Auth state change', currentUser)
+            setUser(currentUser);
+        })
+        return () => {
+            unsubscribe();
+        }
+    })
+
     const authInfo = {
+        user,
     createUser,
     signInUser,
+    signOutUSer,
     }
 
     return (
