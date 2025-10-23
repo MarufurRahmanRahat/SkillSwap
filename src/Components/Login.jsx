@@ -11,16 +11,37 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    //  // reset error & succes
-    //         setError('');
-    //         setSuccess(false);
+  
 
-    const { signInUser,signInWithGoogle } = use(AuthContext);
+    const { signInUser, signInWithGoogle } = use(AuthContext);
 
     const handleLogIn = event => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
+
+        // const passwordPattern = /^.{6,}$/;
+        // const hasUpper = /[A-Z]/;
+        // const hasLower = /[a-z]/;
+        // if (!passwordPattern.test(password)) {
+        //     console.log("password didn't match.")
+        //     setError('Password must be at least 6 characters.')
+        //     return;
+        // }
+        // else if (!hasUpper.test(password)) {
+        //     console.log("password didn't match.")
+        //     setError('Password must have an uppercase letter.')
+        //     return;
+        // }
+        // else if (!hasLower.test(password)) {
+        //     console.log("password didn't match.")
+        //     setError('Password must have a lowercase letter.')
+        //     return;
+        // }
+
+        // reset error & succes
+        setError('');
+        setSuccess(false);
 
         signInUser(email, password)
             .then(result => {
@@ -36,30 +57,16 @@ const Login = () => {
     }
 
 
-    const handleGoogleSignIn = () =>{
+    const handleGoogleSignIn = () => {
         signInWithGoogle()
-        .then(result =>{
-          console.log(result.user);
-          navigate(location.state || '/');
-        })
-        .catch(error =>{
-            console.log(error);
-        })
+            .then(result => {
+                console.log(result.user);
+                navigate(location.state || '/');
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
-
-    
- 
-
-    //         const passwordPattern = /^.{6,}$/;
-    //         if (!passwordPattern.test(password)) {
-    //             console.log("password didn't match.")
-    //             setError('Password must be at least 6 characters.')
-    //             return;
-    //         }
-
-
-   
-
 
     return (
         <div className="hero bg-base-200 min-h-screen">
