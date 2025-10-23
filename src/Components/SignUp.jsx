@@ -94,8 +94,8 @@ const SignUp = () => {
                             <fieldset className="fieldset">
                                 <label className="label">Name</label>
                                 <input type="text" className="input" name='name' placeholder="Name" />
-                                {/* <label className="label">Photo-URL</label>
-                                <input type="" className="input" name='image' placeholder="image" /> */}
+                                <label className="label">Photo-URL</label>
+                                <input type="text" className="input" name='photo' placeholder="Photo-URL" />
                                 <label className="label">Email</label>
                                 <input type="email" className="input" name='email' placeholder="Email" />
                                 <label className="label">Password</label>
