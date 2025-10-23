@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Contexts/AuthContext';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
 
@@ -11,7 +12,7 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-  
+
 
     const { signInUser, signInWithGoogle } = use(AuthContext);
 
@@ -19,6 +20,7 @@ const Login = () => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
+       
 
         // const passwordPattern = /^.{6,}$/;
         // const hasUpper = /[A-Z]/;
@@ -57,7 +59,8 @@ const Login = () => {
     }
 
 
-    const handleGoogleSignIn = () => {
+    const handleGoogleSignIn = (event) => {
+        event.preventDefault();
         signInWithGoogle()
             .then(result => {
                 console.log(result.user);
@@ -67,6 +70,13 @@ const Login = () => {
                 console.log(error);
             })
     }
+
+
+    const handleTogglePassword = (event) => {
+        event.preventDefault();
+        setShowPassword(!showPassword);
+    }
+
 
     return (
         <div className="hero bg-base-200 min-h-screen">
@@ -86,9 +96,12 @@ const Login = () => {
                                         className="input"
                                         name='password' placeholder="Password" />
                                     <button
-                                        onClick={() => setShowPassword(!showPassword)}
-                                        className="btn btn-xs absolute top-2 right-4">eye</button>
+                                        onClick={handleTogglePassword}
+                                        className="btn btn-xs absolute top-2 right-5">
+                                        {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                                    </button>
                                 </div>
+                               
                                 <div><a className="link link-hover">Forgot password?</a></div>
                                 <button className="btn btn-neutral mt-4">Login</button>
                                 <button onClick={handleGoogleSignIn} className="btn bg-white text-black border-[#e5e5e5]">

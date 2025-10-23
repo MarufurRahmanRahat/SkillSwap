@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Contexts/AuthContext';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 // import { createUserWithEmailAndPassword } from 'firebase/auth';
 // import { auth } from '../Firebase/Firebase.init';
 
@@ -9,6 +10,7 @@ const SignUp = () => {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -18,6 +20,7 @@ const SignUp = () => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
+        const terms = event.target.terms.checked;
 
 
         const passwordPattern = /^.{6,}$/;
@@ -43,6 +46,11 @@ const SignUp = () => {
         setError('');
         setSuccess(false);
 
+        if(!terms){
+            setError('Please accept our terms & conditions.');
+            return;
+        }
+
         createUser(email, password)
             .then(result => {
                 console.log('after creation of a new user', result.user)
@@ -57,7 +65,8 @@ const SignUp = () => {
 
     }
 
-      const handleGoogleSignIn = () => {
+      const handleGoogleSignIn = (event) => {
+        event.preventDefault();
         signInWithGoogle()
             .then(result => {
                 console.log(result.user);
@@ -66,6 +75,11 @@ const SignUp = () => {
             .catch(error => {
                 console.log(error);
             })
+    }
+
+    const handleTogglePassword = (event) =>{
+        event.preventDefault();
+        setShowPassword(!showPassword);
     }
 
     return (
@@ -90,8 +104,16 @@ const SignUp = () => {
                                         className="input"
                                         name='password' placeholder="Password" />
                                     <button
-                                        onClick={() => setShowPassword(!showPassword)}
-                                        className="btn btn-xs absolute top-2 right-4">eye</button>
+                                        onClick={handleTogglePassword}
+                                        className="btn btn-xs absolute top-2 right-5">
+                                            {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                                        </button>
+                                </div>
+                                 <div className="">
+                                    <label className="label">
+                                        <input type="checkbox" name='terms' className="checkbox" />
+                                       Accept Our Terms & Conditions
+                                    </label>
                                 </div>
                                 <div><a className="link link-hover">Forgot password?</a></div>
                                 <button className="btn btn-neutral mt-4">SignUp</button>
