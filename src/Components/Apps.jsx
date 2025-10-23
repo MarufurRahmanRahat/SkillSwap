@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import UseProducts from '../Hooks/UseProducts';
 import Appcard from './Appcard';
+import LoadingSpinner from './LoadingSpinner';
 
 const Apps = () => {
 
@@ -14,7 +15,7 @@ const Apps = () => {
             setLoader(false);
         }, 500);
     }
-    // if (loading) return <LoadingSpinner></LoadingSpinner>
+     if (loading) return <LoadingSpinner></LoadingSpinner>
     const term = search.trim().toLocaleLowerCase()
     const searchedProducts = term
         ? products.filter(product =>
@@ -40,7 +41,7 @@ const Apps = () => {
                     </label>
                 </div>
                 {
-                    // loader && <LoadingSpinner></LoadingSpinner>
+                    loader && <LoadingSpinner></LoadingSpinner>
                 }
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
                     {!loader && searchedProducts.length ? (

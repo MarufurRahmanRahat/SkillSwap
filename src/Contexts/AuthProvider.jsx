@@ -7,17 +7,22 @@ import { onAuthStateChanged, signOut } from 'firebase/auth';
 
 const AuthProvider = ({children} ) => {
 
-    const [user,setUser] = useState(null)
+    const [user,setUser] = useState(null);
+    const [loading,setLoading] = useState(true);
+
 
     const createUser = (email,password) => {
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
     const signInUser = (email,password) => {
+         setLoading(true);
         return signInWithEmailAndPassword(auth,email,password);
     }
 
     const signOutUSer = () => {
+         setLoading(true);
         return signOut(auth);
     }
 
@@ -33,6 +38,7 @@ const AuthProvider = ({children} ) => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) =>{
             console.log('current user in Auth state change', currentUser)
             setUser(currentUser);
+            setLoading(false);
         })
         return () => {
             unsubscribe();
@@ -41,6 +47,7 @@ const AuthProvider = ({children} ) => {
 
     const authInfo = {
         user,
+        loading,
     createUser,
     signInUser,
     signOutUSer,

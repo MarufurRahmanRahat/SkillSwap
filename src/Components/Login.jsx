@@ -1,5 +1,5 @@
 import React, { use, useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Contexts/AuthContext';
 
 const Login = () => {
@@ -7,6 +7,9 @@ const Login = () => {
       const [success, setSuccess] = useState(false);
         const [error, setError] = useState('');
         const [showPassword, setShowPassword] = useState(false);
+
+        const location = useLocation();
+        const navigate = useNavigate();
 
     const {signInUser} = use(AuthContext);
      
@@ -19,6 +22,7 @@ const Login = () => {
         .then(result => {
                 console.log('after login of a new user', result.user)
                 event.target.reset();
+                navigate(location.state || '/');
             })
             .catch(error => {
                 console.log('error happend', error.message)

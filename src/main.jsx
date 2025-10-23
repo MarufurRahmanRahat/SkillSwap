@@ -12,6 +12,8 @@ import SignUp from './Components/SignUp.jsx'
 import Apps from './Components/Apps.jsx'
 import Appdetails from './Components/Appdetails.jsx'
 import AuthProvider from './Contexts/AuthProvider.jsx'
+import Myprofile from './Components/Myprofile.jsx'
+import Privateroute from './Routes/Privateroute.jsx'
 
 const router = createBrowserRouter([
   {
@@ -32,11 +34,15 @@ const router = createBrowserRouter([
       },
       {
         path: '/apps',
-        element: <Apps />,
+        Component: Apps 
       },
       {
         path: '/app-details/:id',
         element: <Appdetails />,
+      },
+      {
+        path: '/myprofile',
+        element: <Privateroute><Myprofile></Myprofile></Privateroute>,
       },
 
 
