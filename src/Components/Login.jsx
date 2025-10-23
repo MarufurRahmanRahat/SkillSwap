@@ -1,41 +1,63 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import { Link } from 'react-router';
+import { AuthContext } from '../Contexts/AuthContext';
 
 const Login = () => {
 
-     const [success, setSuccess] = useState(false);
+      const [success, setSuccess] = useState(false);
         const [error, setError] = useState('');
         const [showPassword, setShowPassword] = useState(false);
+
+    const {signInUser} = use(AuthContext);
+     
+    const handleLogIn = event => {
+        event.preventDefault();
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+
+        signInUser(email,password)
+        .then(result => {
+                console.log('after login of a new user', result.user)
+            })
+            .catch(error => {
+                console.log('error happend', error.message)
+                // setError(error.message);
+            })
+    }
+
+    //  const [success, setSuccess] = useState(false);
+    //     const [error, setError] = useState('');
+    //     const [showPassword, setShowPassword] = useState(false);
     
-        const handleRegister = (event) => {
+    //     const handleRegister = (event) => {
     
-            event.preventDefault();
-            const email = event.target.email.value;
-            const password = event.target.password.value;
-            console.log('register clicked', email, password);
+    //         event.preventDefault();
+    //         const email = event.target.email.value;
+    //         const password = event.target.password.value;
+    //         console.log('register clicked', email, password);
     
-            const passwordPattern = /^.{6,}$/;
-            if (!passwordPattern.test(password)) {
-                console.log("password didn't match.")
-                setError('Password must be at least 6 characters.')
-                return;
-            }
+    //         const passwordPattern = /^.{6,}$/;
+    //         if (!passwordPattern.test(password)) {
+    //             console.log("password didn't match.")
+    //             setError('Password must be at least 6 characters.')
+    //             return;
+    //         }
     
-            // reset error & succes
-            setError('');
-            setSuccess(false);
+    //         // reset error & succes
+    //         setError('');
+    //         setSuccess(false);
     
-            createUserWithEmailAndPassword(auth, email, password)
-                .then(result => {
-                    console.log('after creation of a new user', result.user)
-                    setSuccess(true);
-                    event.target.reset()
-                })
-                .catch(error => {
-                    console.log('error happend', error.message)
-                    setError(error.message);
-                })
-        }
+    //         createUserWithEmailAndPassword(auth, email, password)
+    //             .then(result => {
+    //                 console.log('after creation of a new user', result.user)
+    //                 setSuccess(true);
+    //                 event.target.reset()
+    //             })
+    //             .catch(error => {
+    //                 console.log('error happend', error.message)
+    //                 setError(error.message);
+    //             })
+    //     }
     
 
     return (
@@ -46,7 +68,7 @@ const Login = () => {
                 </div>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div className="card-body">
-                        <form onSubmit={handleRegister}>
+                        <form onSubmit={handleLogIn}>
                             <fieldset className="fieldset">
                                 <label className="label">Email</label>
                                 <input type="email" className="input" name='email' placeholder="Email" />

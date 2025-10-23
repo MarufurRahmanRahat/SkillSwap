@@ -2,6 +2,8 @@ import React from 'react';
 import { AuthContext } from './AuthContext';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../Firebase/Firebase.init';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { onAuthStateChanged } from 'firebase/auth/cordova';
 
 const AuthProvider = ({children} ) => {
 
@@ -9,8 +11,21 @@ const AuthProvider = ({children} ) => {
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
+    const signInUser = (email,password) => {
+        return signInWithEmailAndPassword(auth,email,password);
+    }
+
+    onAuthStateChanged(auth ,(currentUser) => {
+        if(currentUser){
+            console.log('inside observer: if', currentUser)
+        }else{
+            console.log('inside observer: else', currentUser)
+        }
+    })
+
     const authInfo = {
     createUser,
+    signInUser,
     }
 
     return (
