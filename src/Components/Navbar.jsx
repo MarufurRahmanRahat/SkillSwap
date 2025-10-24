@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
 import '../App.css'
 import { AuthContext } from '../Contexts/AuthContext';
+import { DiSenchatouch } from 'react-icons/di';
 
 
 const Navbar = () => {
@@ -36,7 +37,10 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">SkillSwap</a>
+                <div className="flex justify-center items-center">
+                <Link to='/'><DiSenchatouch className='w-8 h-8' /></Link>
+                <Link to='/' className=" hidden sm:block text-xl">SkillSwap</Link>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -45,7 +49,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <div className="">
-                    <img className='w-12 rounded-full mx-2' src={`${user ? user.photoURL : "https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517430_1280.png" }`} referrerPolicy='no-referrer' alt=''></img>
+                    <img className='w-12 rounded-full mx-2' src={`${user ? user.photoURL : '' }`} referrerPolicy='no-referrer' alt=''></img>
                 </div>
                 {
                     user ? <a onClick={handleSignOut} className="btn">Log out</a>
