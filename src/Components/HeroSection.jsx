@@ -18,7 +18,7 @@ const HeroSection = () => {
       id: 1,
       title: "Learn New Skills Today",
       subtitle: "Connect with expert tutors in your local area",
-      image: "https://i.postimg.cc/t4yK6Rv1/istockphoto-1198082420-612x612.jpg",
+      image: "https://ibb.co.com/d4zpZwNP",
       buttonText: "Get Started"
     },
     {

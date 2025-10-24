@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from '../Firebase/Firebase.init';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
@@ -43,6 +43,11 @@ const AuthProvider = ({ children }) => {
             console.log('inside observer: else', currentUser)
         }
     })
+    
+    const updateUser = (updatedData) =>{
+        return updateProfile(auth.currentUser,updatedData);
+    }
+
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -62,6 +67,8 @@ const AuthProvider = ({ children }) => {
         signInUser,
         signInWithGoogle,
         signOutUSer,
+        updateUser,
+        setUser,
     }
 
     return (

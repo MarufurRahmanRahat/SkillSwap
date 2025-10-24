@@ -14,7 +14,7 @@ const SignUp = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const { createUser,signInWithGoogle } = use(AuthContext);
+    const { createUser,signInWithGoogle,updateUser,user,setUser } = use(AuthContext);
 
     const handleRegister = (event) => {
         event.preventDefault();
@@ -23,6 +23,8 @@ const SignUp = () => {
         const terms = event.target.terms.checked;
         const name = event.target.name.value;
         const photo = event.target.photo.value;
+
+        console.log(name, photo);
 
 
 
@@ -57,6 +59,15 @@ const SignUp = () => {
         createUser(email, password)
             .then(result => {
                 console.log('after creation of a new user', result.user)
+                
+                updateUser({displayName: name, photoURL: photo})
+                .then(() =>{
+                 setUser({...user,displayName: name, photoURL: photo})
+                })
+                .catch((error) =>{
+                    console.log(error);
+                    setUser(user);
+                })
                 setSuccess(true);
                 event.target.reset();
                 navigate(location.state || '/');

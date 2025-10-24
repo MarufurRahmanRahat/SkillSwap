@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from 'react';
+
 import { Link, useParams } from 'react-router';
 import UseProducts from '../Hooks/UseProducts';
-import downlogo from '../assets/icon-downloads.png'
+
 import starlogo from '../assets/icon-ratings.png'
-import reviewlogo from '../assets/icon-review.png'
+
 import { ContextApiInstalled } from './ContextApiInstalled';
 import LoadingSpinner from './LoadingSpinner';
 import Error from './Error';

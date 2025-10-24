@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/app-details/:id',
-        element: <Appdetails />,
+        element:<Privateroute><Appdetails /></Privateroute> 
       },
       {
         path: '/myprofile',

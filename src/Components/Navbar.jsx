@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
 import '../App.css'
 import { AuthContext } from '../Contexts/AuthContext';
-import { signOut } from 'firebase/auth/cordova';
+
 
 const Navbar = () => {
 
@@ -20,14 +20,9 @@ const Navbar = () => {
 
     const links = <>
     <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/login">Login</NavLink></li>
-    <li><NavLink to="/signup">SignUp</NavLink></li>
-    {
-        user && <>
-        <li><NavLink to="/myprofile">My Profile</NavLink></li>
+    <li><NavLink to="/myprofile">My Profile</NavLink></li>
         </>
-    }
-    </>
+  
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -49,9 +44,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
+                <div className="">
+                    <img className='w-12 rounded-full mx-2' src={`${user ? user.photoURL : "https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517430_1280.png" }`} referrerPolicy='no-referrer' alt=''></img>
+                </div>
                 {
-                    user ? <a onClick={handleSignOut} className="btn">SignOut</a>
-                    : <Link to='/login'>Login</Link>
+                    user ? <a onClick={handleSignOut} className="btn">Log out</a>
+                    : <>
+                    <Link className='btn mr-1' to='/login'>Login</Link>
+                    <Link className='btn' to='/signup'>SignUp</Link>
+                    </>
                 }
             </div>
         </div>
