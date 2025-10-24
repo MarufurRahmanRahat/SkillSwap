@@ -2,6 +2,8 @@ import React from 'react';
 import Appcard from './Appcard';
 import UseProducts from '../Hooks/UseProducts';
 import { Link } from 'react-router';
+import HeroSection from './HeroSection';
+
 
 const Home = () => {
 
@@ -11,7 +13,7 @@ const Home = () => {
 
     return (
        <div>
-            {/* <Banner /> */}
+            <HeroSection></HeroSection>
             <div className="p-3 sm:p-8 md:p-14 lg:p-20  py-3 sm:py-8 md:py-14 lg:py-20">
                 <div className="text-center pb-10">
                     <h1 className='font-bold text-3xl md:text-5xl pb-4'>Trending Apps</h1>
