@@ -7,7 +7,7 @@
     "price": 20,
     "rating": 4.8,
     "slotsAvailable": 3,
-    "description": "Acoustic guitar classes for complete beginners.",
+    "description": "Whether you've always dreamed of playing guitar or want to pick up a new hobby, this course is perfect for complete beginners. Learn the fundamentals of acoustic guitar playing, including proper posture, hand positioning, and finger techniques. We'll start with basic chords like G, C, D, and E minor, progressing to simple strumming patterns that you can use to play popular songs. Each session includes music theory basics to help you understand what you're playing, not just memorizing finger positions. You'll learn how to read guitar tablature and chord diagrams, making it easy to learn songs on your own. Practice exercises are provided after each lesson to reinforce your learning. By the end of the course, you'll be able to play at least 5-10 simple songs confidently. Classes are conducted in a friendly, encouraging environment where mistakes are part of the learning process. All you need is your own acoustic guitar and a willingness to practice. Perfect for adults and teenagers aged 13 and above who want to start their musical journey.",
     "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=500",
     "category": "Music"
   },
@@ -19,7 +19,7 @@
     "price": 10,
     "rating": 4.6,
     "slotsAvailable": 5,
-    "description": "Conversational English sessions for non-native speakers.",
+    "description": "Improve your English speaking skills through interactive conversational practice designed specifically for non-native speakers. This program focuses on building confidence in everyday communication, whether for professional settings, travel, or social interactions. Each session covers practical topics like introducing yourself, discussing hobbies, workplace conversations, and cultural exchanges. We emphasize pronunciation, intonation, and natural speech patterns that native speakers use. You'll learn common idioms, phrasal verbs, and expressions that make your English sound more fluent and natural. The classes include role-playing exercises where you practice real-world scenarios like job interviews, ordering at restaurants, and making phone calls. Grammar corrections are provided gently without interrupting the flow of conversation. You'll also receive personalized feedback on your speaking strengths and areas for improvement. Sessions are conducted entirely in English to maximize your exposure and practice time. Small group settings ensure everyone gets ample speaking opportunities. Beginners to intermediate learners welcome.",
     "image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=500",
     "category": "Language"
   },
@@ -31,7 +31,7 @@
     "price": 15,
     "rating": 4.9,
     "slotsAvailable": 8,
-    "description": "Gentle yoga sessions focusing on flexibility and relaxation.",
+    "description": "Discover the transformative power of yoga with classes designed specifically for those new to the practice. This beginner-friendly program focuses on gentle poses, proper breathing techniques, and mindfulness meditation. Each session begins with centering exercises to calm the mind and prepare the body. You'll learn foundational poses like Mountain Pose, Downward Dog, Child's Pose, and Warrior sequences with detailed instructions on proper alignment. The classes emphasize flexibility, strength building, and stress reduction without pushing you beyond your comfort level. Modifications are provided for every pose to accommodate different body types and fitness levels. We incorporate pranayama (breathing exercises) that help reduce anxiety and improve lung capacity. The practice concludes with Savasana (relaxation pose) and guided meditation for deep relaxation. No previous experience or flexibility required – everyone starts somewhere! Classes are conducted in a non-competitive, supportive environment where you move at your own pace. Bring your own yoga mat and wear comfortable clothing. Perfect for anyone looking to improve physical health, mental clarity, and overall well-being.",
     "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500",
     "category": "Fitness"
   },
@@ -43,7 +43,7 @@
     "price": 25,
     "rating": 4.7,
     "slotsAvailable": 4,
-    "description": "Learn HTML, CSS, and JavaScript fundamentals from scratch.",
+    "description": "Launch your career in tech by learning the fundamental building blocks of web development from scratch. This comprehensive course covers HTML5 for structure, CSS3 for styling, and JavaScript for interactivity. You'll start by understanding how the web works, including browsers, servers, and the client-server model. Learn to create semantic HTML documents with proper structure, headings, paragraphs, links, and images. Master CSS styling techniques including colors, fonts, layouts with Flexbox and Grid, and responsive design principles. JavaScript lessons cover variables, data types, functions, conditionals, loops, and DOM manipulation. By the end of the course, you'll build at least three complete projects: a personal portfolio website, an interactive to-do list application, and a responsive landing page. Each project reinforces the concepts learned and provides hands-on coding experience. You'll also learn best practices, code organization, and debugging techniques. The course includes access to recommended resources, coding challenges, and a supportive learning community. No prior programming experience required – just bring your laptop and curiosity!",
     "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500",
     "category": "Technology"
   },
@@ -55,7 +55,7 @@
     "price": 12,
     "rating": 4.5,
     "slotsAvailable": 6,
-    "description": "Practice conversational Spanish with a native speaker.",
+    "description": "Practice conversational Spanish with a native speaker in a relaxed, informal language exchange setting. This is not a traditional classroom – it's an immersive practice session where you speak Spanish from day one. Each meeting covers practical topics like greetings, family, food, travel, current events, and cultural traditions. You'll learn not just the language, but also cultural nuances, slang, and expressions used in everyday Latin American Spanish. The sessions are interactive and adjusted to your current level, whether you're a beginner learning basic phrases or intermediate learner wanting to improve fluency. Pronunciation practice is included with special attention to difficult sounds like rolled R's and the difference between B and V. You'll receive corrections in a friendly, encouraging manner that builds confidence rather than fear of making mistakes. Cultural discussions about food, music, festivals, and traditions make learning engaging and memorable. Optional homework includes Spanish songs, podcasts, or TV show recommendations to continue learning between sessions. Perfect for travelers, heritage speakers wanting to reconnect with their roots, or anyone fascinated by Spanish language and culture.",
     "image": "https://images.unsplash.com/photo-1527866959252-deab85ef7d1b?w=500",
     "category": "Language"
   },
@@ -67,7 +67,7 @@
     "price": 30,
     "rating": 4.9,
     "slotsAvailable": 2,
-    "description": "Master camera settings, composition, and lighting techniques.",
+    "description": "Transform from a casual photo-taker to a confident photographer who understands the art and science of capturing stunning images. This course demystifies your camera, whether it's a DSLR, mirrorless, or even a smartphone. Learn the exposure triangle: aperture, shutter speed, and ISO, and how they work together to create perfectly exposed photos. Master composition techniques like the rule of thirds, leading lines, framing, and negative space to create visually compelling images. Understanding lighting is crucial – you'll learn about natural light, golden hour, blue hour, and how to work with harsh midday sun. Studio lighting basics are covered for those interested in portrait photography. Post-processing fundamentals using free software help you enhance your images without over-editing. Each session includes hands-on shooting assignments with constructive feedback on your work. Topics covered include portrait photography, landscape photography, street photography, and macro photography. You'll build a portfolio of your best work throughout the course. Classes include both theoretical knowledge and practical outdoor shooting sessions. Bring your camera and an eye for beauty!",
     "image": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=500",
     "category": "Arts"
   },
@@ -79,7 +79,7 @@
     "price": 18,
     "rating": 4.8,
     "slotsAvailable": 5,
-    "description": "Learn to cook traditional Bengali and fusion dishes.",
+    "description": "Discover the joy of cooking delicious, healthy meals at home with this hands-on culinary course. Learn to prepare traditional Bengali dishes like fish curry, chicken rezala, vegetable bhaji, and dal, along with fusion recipes that blend Eastern and Western flavors. Each class focuses on a complete meal including appetizer, main course, and dessert. You'll master essential cooking techniques like tempering spices, marinating meat, proper knife skills, and cooking rice perfectly every time. Understanding spices is key – learn about cumin, coriander, turmeric, garam masala, and how to create your own spice blends. The classes emphasize healthy cooking methods without sacrificing flavor. Meal planning and grocery shopping tips help you cook efficiently during busy weekdays. Food safety and kitchen hygiene practices ensure you cook safely for your family. Vegetarian and non-vegetarian options are available. Each session includes recipe cards you can take home and printed ingredient lists. Classes are conducted in a home kitchen setting with small groups for personalized attention. No prior cooking experience needed – beginners welcome!",
     "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=500",
     "category": "Culinary"
   },
@@ -91,7 +91,7 @@
     "price": 22,
     "rating": 4.7,
     "slotsAvailable": 3,
-    "description": "Fun and engaging piano lessons for children aged 6-12.",
+    "description": "Introduce your child to the magical world of music through fun, engaging piano lessons designed specifically for young learners aged 6-12. The curriculum uses age-appropriate teaching methods that make learning feel like play. Children start by learning basic music notation, the piano keyboard layout, and proper hand positioning. Simple melodies and songs kids already know keep them motivated and excited to practice. Lessons incorporate music theory fundamentals presented through games, colorful worksheets, and interactive activities. Rhythm exercises help develop coordination and timing. As skills progress, students learn to read both treble and bass clefs, play hands together, and understand dynamics and expression. The program builds confidence through regular mini-recitals where kids perform for family. Practice techniques are taught to make home practice effective and enjoyable. Lessons include a mix of classical pieces, popular children's songs, and contemporary music. Parents receive progress reports and guidance on supporting their child's practice at home. Patience, encouragement, and celebrating small victories are at the heart of every lesson.",
     "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=500",
     "category": "Music"
   },
@@ -103,7 +103,7 @@
     "price": 35,
     "rating": 4.6,
     "slotsAvailable": 4,
-    "description": "Social media marketing, SEO, and content strategy basics.",
+    "description": "Navigate the digital landscape and learn how to effectively market products, services, or personal brands online. This comprehensive course covers the essential pillars of digital marketing in today's connected world. Social media marketing strategies for platforms like Facebook, Instagram, LinkedIn, and TikTok, including content creation, posting schedules, and engagement tactics. Search Engine Optimization (SEO) fundamentals to help websites rank higher on Google, including keyword research, on-page optimization, and link building basics. Content marketing principles for creating valuable blog posts, videos, and infographics that attract and retain audiences. Email marketing best practices including list building, campaign design, and measuring open rates and conversions. Google Analytics basics to understand website traffic, user behavior, and conversion tracking. Paid advertising introduction covering Facebook Ads and Google Ads campaign structure. Social media analytics and how to measure ROI on marketing efforts. The course includes real-world case studies and practical exercises where you'll create your own marketing plan. Perfect for entrepreneurs, small business owners, freelancers, or anyone looking to enhance their digital marketing skills.",
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500",
     "category": "Business"
   },
@@ -115,7 +115,7 @@
     "price": 20,
     "rating": 4.9,
     "slotsAvailable": 6,
-    "description": "Explore watercolor techniques and create beautiful artworks.",
+    "description": "Unleash your creativity and learn the beautiful, flowing art of watercolor painting in this beginner-friendly course. Watercolors are uniquely challenging yet rewarding, and this class breaks down techniques that make success accessible to everyone. Start with understanding your materials: different types of watercolor paints, brushes, paper, and how each affects your artwork. Learn fundamental techniques like wet-on-wet, wet-on-dry, dry brush, and lifting to create various effects. Color theory specifically for watercolors teaches you about mixing colors, creating harmonious palettes, and understanding transparency. Master gradient washes, creating smooth transitions from light to dark. You'll paint a variety of subjects including landscapes, florals, simple still life, and abstract designs. Each project builds on previous skills while introducing new challenges. Mistakes are reframed as happy accidents that can add character to your paintings. The class emphasizes developing your own artistic style rather than copying exactly. Sessions include demonstrations, guided practice time, and constructive feedback. All skill levels welcome, though especially tailored for beginners. Bring your own supplies or starter kits available for purchase.",
     "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500",
     "category": "Arts"
   },
@@ -127,7 +127,7 @@
     "price": 15,
     "rating": 4.7,
     "slotsAvailable": 7,
-    "description": "Weekly French speaking practice in a relaxed group setting.",
+    "description": "Immerse yourself in the French language through weekly conversation practice in a supportive, low-pressure group environment. This is not a traditional grammar class – the focus is entirely on speaking, listening, and gaining confidence in real conversations. Each week features a different theme: travel in France, French cuisine, cinema, literature, current events, or daily life topics. Native and fluent French speakers facilitate discussions, gently correct pronunciation, and introduce new vocabulary in context. You'll learn colloquial expressions, slang, and cultural references that textbooks often miss. The group format allows you to hear different accents and speaking styles while making friends with fellow French enthusiasts. Games, role-playing, and storytelling activities make practice engaging and memorable. Cultural elements like French music, film clips, and news articles are incorporated to provide authentic language exposure. Whether you're preparing for travel, maintaining language skills, or studying for exams, regular conversation practice is essential for fluency. Intermediate level recommended, but motivated beginners are welcome. Sessions are conducted primarily in French to maximize immersion.",
     "image": "https://images.unsplash.com/photo-1564577160324-112d603f750f?w=500",
     "category": "Language"
   },
@@ -139,7 +139,7 @@
     "price": 18,
     "rating": 4.5,
     "slotsAvailable": 5,
-    "description": "Create stunning designs for social media and marketing.",
+    "description": "Master the art of creating professional-looking designs without expensive software or years of training. Canva is a user-friendly design platform, and this course teaches you how to leverage its powerful features for stunning results. Learn to create eye-catching social media graphics for Instagram, Facebook, LinkedIn, and Pinterest that drive engagement. Design professional business materials like flyers, brochures, business cards, and presentations. Master typography principles including font pairing, hierarchy, and readability. Color theory and how to choose color schemes that evoke the right emotions and align with brand identity. Photo editing within Canva including filters, adjustments, and removing backgrounds. Using Canva's extensive template library while customizing designs to be uniquely yours. Brand kit creation to maintain consistency across all your marketing materials. Animation features for simple video content and animated social posts. Exporting in various formats for different purposes. The course includes practical projects like designing your own social media brand, creating a mock product launch campaign, and developing a complete marketing kit. Perfect for entrepreneurs, social media managers, small business owners, bloggers, or anyone wanting to create professional designs independently.",
     "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500",
     "category": "Technology"
   },
@@ -151,7 +151,7 @@
     "price": 12,
     "rating": 4.8,
     "slotsAvailable": 10,
-    "description": "Guided meditation sessions for stress relief and mental clarity.",
+    "description": "Master the art of creating professional-looking designs without expensive software or years of training. Canva is a user-friendly design platform, and this course teaches you how to leverage its powerful features for stunning results. Learn to create eye-catching social media graphics for Instagram, Facebook, LinkedIn, and Pinterest that drive engagement. Design professional business materials like flyers, brochures, business cards, and presentations. Master typography principles including font pairing, hierarchy, and readability. Color theory and how to choose color schemes that evoke the right emotions and align with brand identity. Photo editing within Canva including filters, adjustments, and removing backgrounds. Using Canva's extensive template library while customizing designs to be uniquely yours. Brand kit creation to maintain consistency across all your marketing materials. Animation features for simple video content and animated social posts. Exporting in various formats for different purposes. The course includes practical projects like designing your own social media brand, creating a mock product launch campaign, and developing a complete marketing kit. Perfect for entrepreneurs, social media managers, small business owners, bloggers, or anyone wanting to create professional designs independently.",
     "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500",
     "category": "Wellness"
   },
@@ -163,7 +163,7 @@
     "price": 25,
     "rating": 4.6,
     "slotsAvailable": 3,
-    "description": "Learn safe home electrical troubleshooting and repairs.",
+    "description": "Gain practical skills and confidence to handle common household electrical issues safely and effectively. This hands-on course demystifies home electrical systems and teaches you when you can DIY and when to call a professional. Learn electrical safety fundamentals including how to turn off power at the breaker box, testing for live wires, and proper use of safety equipment. Understanding your home's electrical panel, circuit breakers, and wiring basics. How to replace light switches, outlets, and fixtures safely and correctly. Troubleshooting common problems like flickering lights, dead outlets, and tripped breakers. Installing dimmer switches and programmable timers for lights. Basic wiring techniques and understanding wire colors and gauges. Using essential tools like multimeters, wire strippers, and voltage testers. Energy-saving tips and upgrading to LED lighting systems. Important electrical codes and regulations to ensure your work is safe and legal. Each lesson includes hands-on practice with real electrical components in a controlled environment. Safety is emphasized throughout – you'll learn to recognize when a job requires a licensed electrician. Perfect for homeowners, renters wanting to understand their space better, or anyone interested in basic home maintenance skills.",
     "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500",
     "category": "Home Improvement"
   },
@@ -175,7 +175,7 @@
     "price": 20,
     "rating": 4.9,
     "slotsAvailable": 8,
-    "description": "High-energy salsa classes for all skill levels.",
+    "description": "Feel the rhythm and energy of Latin dance through high-energy salsa classes that get your body moving and your spirit soaring. Salsa is more than just steps – it's a cultural experience filled with passion, connection, and joy. Start with basic footwork, timing, and rhythm to build a solid foundation. Learn the fundamental salsa basic step in both linear and circular styles. Partner connection techniques including leading and following, frame, and hand holds. Progressive turn patterns, underarm turns, and cross-body leads that form the core of salsa dancing. Styling elements that add personality and flair to your dancing. Musicality training helps you dance on beat and interpret different salsa rhythms like mambo, cha-cha, and son. Body movement including Cuban motion, hip action, and arm styling. Social dancing etiquette and how to navigate a crowded dance floor. Classes include both partner work and solo practice, and you can come with or without a partner. The supportive, fun environment encourages experimentation and celebrates progress. Physical benefits include improved cardiovascular health, coordination, balance, and posture. No dance experience necessary – just bring comfortable shoes and an enthusiastic attitude!",
     "image": "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=500",
     "category": "Dance"
   },
@@ -187,7 +187,7 @@
     "price": 40,
     "rating": 4.7,
     "slotsAvailable": 2,
-    "description": "Build your first mobile app using React Native.",
+    "description": "Enter the lucrative world of mobile app development by learning to build cross-platform applications using React Native. This course is perfect for those with basic JavaScript knowledge who want to create apps for both iOS and Android with a single codebase. Understanding the React Native framework, components, and the mobile development ecosystem. Setting up your development environment including Node.js, Expo, and necessary tools. Core concepts like JSX, props, state management, and lifecycle methods in mobile context. Building user interfaces with React Native components like View, Text, Image, ScrollView, and FlatList. Navigation between screens using React Navigation library. Handling user input with TextInput, buttons, and touch gestures. Integrating device features like camera, location services, and push notifications. State management patterns using Context API and Redux for complex applications. API integration to fetch and display data from backend services. Styling mobile apps with StyleSheet and responsive design for different screen sizes. Debugging techniques and performance optimization. Throughout the course, you'll build a complete functional app from scratch, implementing features progressively. Publishing basics for App Store and Google Play. Perfect for web developers transitioning to mobile or anyone wanting to build their own app idea.",
     "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500",
     "category": "Technology"
   },
@@ -199,7 +199,7 @@
     "price": 15,
     "rating": 4.8,
     "slotsAvailable": 6,
-    "description": "Learn organic gardening and indoor plant maintenance.",
+    "description": "Cultivate a green thumb and transform your living space with thriving plants, whether you have a backyard garden or just a sunny windowsill. This comprehensive course covers both outdoor gardening and indoor plant care for all skill levels. Understanding plant biology basics including photosynthesis, water uptake, and nutrient needs. Soil composition, pH levels, and choosing the right soil for different plants. Organic gardening principles including composting, natural pest control, and avoiding harmful chemicals. Seasonal planting guides for vegetables, herbs, and flowers in your climate zone. Indoor plant care including light requirements, watering schedules, humidity needs, and common problems. Propagation techniques like taking cuttings, dividing plants, and growing from seeds. Container gardening for small spaces including balcony gardens and vertical growing systems. Identifying and treating common plant diseases and pest infestations naturally. Pruning techniques to encourage healthy growth and attractive plant shapes. Harvesting and preserving herbs and vegetables. Creating pollinator-friendly gardens that support bees and butterflies. Each session includes hands-on practice with real plants and soil. You'll leave with your own propagated plants and the knowledge to keep them thriving. Perfect for urban dwellers, homesteaders, or anyone wanting to connect with nature.",
     "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500",
     "category": "Lifestyle"
   },
@@ -211,7 +211,7 @@
     "price": 28,
     "rating": 4.6,
     "slotsAvailable": 4,
-    "description": "Overcome stage fright and deliver confident presentations.",
+    "description": "Conquer your fear of public speaking and become a confident, engaging presenter who captivates any audience. This transformative course addresses both the psychological and technical aspects of effective public communication. Understanding and managing stage fright through breathing exercises, positive visualization, and reframing nervous energy. Structuring presentations with clear openings, logical organization, and memorable conclusions. Storytelling techniques that make your message resonate emotionally with listeners. Vocal variety including pace, pitch, volume, and strategic pauses for emphasis. Body language mastery including posture, gestures, eye contact, and movement on stage. Creating engaging visual aids that support rather than overshadow your message. Handling difficult questions and managing audience interaction with grace. Adapting your style for different contexts: business presentations, wedding toasts, conference talks, or job interviews. Practicing impromptu speaking to think clearly under pressure. Video recording and analysis of your presentations with constructive feedback. Understanding audience psychology and tailoring messages to different groups. Each participant delivers multiple presentations throughout the course, progressively building confidence. Small class sizes ensure personalized attention and ample practice time. Whether you're preparing for a specific event or wanting to improve professional communication skills, this course provides the tools and practice you need.",
     "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500",
     "category": "Professional Development"
   },
@@ -223,7 +223,7 @@
     "price": 22,
     "rating": 4.9,
     "slotsAvailable": 5,
-    "description": "Master cakes, cookies, and artisan bread making.",
+    "description": "Discover the delicious world of baking where science meets creativity to produce stunning and delectable treats. This hands-on course teaches fundamental baking techniques along with impressive pastry skills. Understanding baking science including how ingredients like flour, eggs, sugar, and leavening agents interact. Measuring accurately and why precision matters in baking success. Mastering basic recipes like cookies, brownies, and muffins before advancing to complex projects. Cake baking including vanilla, chocolate, and specialty flavors, plus achieving perfect texture and moisture. Frosting and decorating techniques using buttercream, fondant, and royal icing. Bread making including kneading, proofing, and achieving that perfect crust. Pastry dough for pies, tarts, and croissants including lamination techniques for flaky layers. Working with chocolate for tempering, ganache, and decorative elements. Troubleshooting common baking problems like flat cookies, sunken cakes, or tough pastry. Presentation skills to make your baked goods look as good as they taste. Each class includes hands-on baking time where you create and take home delicious treats. Recipe modifications for dietary restrictions including gluten-free and vegan options. Small class sizes ensure everyone gets hands-on practice and individualized instruction. Whether you dream of opening a bakery or just want to impress family and friends, this course provides the foundation for baking success.",
     "image": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=500",
     "category": "Culinary"
   },
@@ -235,7 +235,7 @@
     "price": 30,
     "rating": 4.7,
     "slotsAvailable": 4,
-    "description": "Customized workout plans for strength and weight management.",
+    "description": "Transform your body and health with personalized fitness training designed specifically for your goals, fitness level, and lifestyle. This isn't generic workout advice – each program is customized after an initial assessment of your current fitness, health history, and objectives. Understanding fitness fundamentals including cardiovascular health, strength training, flexibility, and body composition. Proper exercise form and technique to maximize results while preventing injuries. Creating balanced workout routines that target all major muscle groups. Strength training with weights, resistance bands, and bodyweight exercises. Cardiovascular training options from walking and jogging to high-intensity interval training. Core strengthening and stability exercises for better posture and back health. Flexibility and mobility work to maintain range of motion and prevent stiffness. Nutrition guidance tailored to your fitness goals whether losing fat, building muscle, or improving athletic performance. Tracking progress through measurements, photos, and performance metrics. Motivation strategies and accountability to keep you consistent. Workout modifications for injuries, limitations, or equipment availability. Training can be conducted in-person at a gym, at your home, or through virtual sessions. Programs adapt as you progress, continually challenging you appropriately. Perfect for beginners starting their fitness journey, experienced exercisers wanting to break through plateaus, or anyone needing expert guidance and accountability.",
     "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500",
     "category": "Fitness"
   }
