@@ -9,10 +9,10 @@ const HowItWorks = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration in milliseconds
-            once: true, // Whether animation should happen only once
-            offset: 100, // Offset from the original trigger point
-            easing: 'ease-in-out', // Easing function
+            duration: 1000, 
+            once: true, 
+            offset: 100, 
+            easing: 'ease-in-out', 
         });
     }, []);
 

@@ -4,6 +4,7 @@ import UseProducts from '../Hooks/UseProducts';
 import { Link } from 'react-router';
 import HeroSection from './HeroSection';
 import HowItWorks from './HowItWorks';
+import TopProvidors from './TopProvidors';
 
 
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
                 </div>
             </div>
             <HowItWorks></HowItWorks>
+            <TopProvidors></TopProvidors>
         </div>
     );
 };
