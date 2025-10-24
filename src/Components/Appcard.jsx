@@ -18,9 +18,12 @@ const Appcard = ({ product }) => {
                         <h2 className="card-title">{skillName}</h2>
                         <div className="card-actions justify-between">
                             <button className="btn  bg-[#F1F5E8] text-[#00D390]">
-                                <img src={down} alt="" />{price}</button>
+                                ${price}</button>
                             <button className="btn  bg-[#FFF0E1] text-[#FF8811]">
                                 <img src={star} alt="" />{rating}</button>
+                        </div>
+                        <div className="text-center mt-4">
+                            <button className='btn btn-secondary w-full'>View Details</button>
                         </div>
                     </div>
                 </div>

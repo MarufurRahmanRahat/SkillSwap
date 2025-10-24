@@ -28,8 +28,8 @@ const Apps = () => {
         <div>
             <div className="p-3 sm:p-8 md:p-14 lg:p-20  py-3 sm:py-8 md:py-14 lg:py-20">
                 <div className="text-center pb-10">
-                    <h1 className='font-bold text-3xl md:text-5xl pb-4'>Our All Applications</h1>
-                    <p className='font-normal text-[20px]'>Explore All Apps on the Market developed by us. We code for Millions</p>
+                    <h1 className='font-bold text-3xl md:text-5xl pb-4'>Our All Programs</h1>
+                    <p className='font-normal text-[20px]'>Explore All Skill Programs provided by us. We work for better world.</p>
                 </div>
                 <div className="flex justify-between items-center mb-[20px]">
                     <h1 className='font-semibold text-[24px]'>({searchedProducts.length})Apps Found</h1>
