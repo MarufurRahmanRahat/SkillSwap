@@ -3,6 +3,7 @@ import Appcard from './Appcard';
 import UseProducts from '../Hooks/UseProducts';
 import { Link } from 'react-router';
 import HeroSection from './HeroSection';
+import HowItWorks from './HowItWorks';
 
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
                     <Link className='btn btn-primary bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)] ' to='/apps'>See All</Link>
                 </div>
             </div>
+            <HowItWorks></HowItWorks>
         </div>
     );
 };
