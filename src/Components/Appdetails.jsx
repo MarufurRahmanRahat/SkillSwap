@@ -4,7 +4,7 @@ import UseProducts from '../Hooks/UseProducts';
 
 import starlogo from '../assets/icon-ratings.png'
 
-import { ContextApiInstalled } from './ContextApiInstalled';
+
 import LoadingSpinner from './LoadingSpinner';
 import Error from './Error';
 import { BiDollar } from 'react-icons/bi';

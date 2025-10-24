@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <div className="">
-                    <img className='w-12 rounded-full mx-2' src={`${user ? user.photoURL : '' }`} referrerPolicy='no-referrer' alt=''></img>
+                    <img className='w-12 rounded-full mx-2' src={`${user && user.photoURL }`} referrerPolicy='no-referrer' alt=''></img>
                 </div>
                 {
                     user ? <a onClick={handleSignOut} className="btn">Log out</a>

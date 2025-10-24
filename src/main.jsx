@@ -14,6 +14,7 @@ import Appdetails from './Components/Appdetails.jsx'
 import AuthProvider from './Contexts/AuthProvider.jsx'
 import Myprofile from './Components/Myprofile.jsx'
 import Privateroute from './Routes/Privateroute.jsx'
+import ForgetPassword from './Components/ForgetPassword.jsx'
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: '/myprofile',
         element: <Privateroute><Myprofile></Myprofile></Privateroute>,
+      },
+       {
+        path: '/forgetpassword',
+        Component: ForgetPassword 
       },
 
 
