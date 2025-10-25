@@ -6,12 +6,13 @@ import HeroSection from './HeroSection';
 import HowItWorks from './HowItWorks';
 import TopProvidors from './TopProvidors';
 import SuccessStories from './SuccessStories';
+import LoadingSpinner from './LoadingSpinner';
 
 
 const Home = () => {
 
  const {products,loading,error} = UseProducts()
-    // if(loading) return <LoadingSpinner></LoadingSpinner>
+     if(loading) return <LoadingSpinner></LoadingSpinner>
     const featuredProducts = products.slice(0, 6);
 
     return (

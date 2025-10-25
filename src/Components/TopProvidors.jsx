@@ -10,8 +10,8 @@ const TopProvidors = () => {
     { name: "Rafi Ahmed", rating: 4.7, students: 95, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" }
   ];
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Top Rated Providers</h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-30">
+        <h2 className="text-3xl  text-center mb-12 font-bold md:text-5xl pb-4">Top Rated Providers</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {topProviders.map((provider, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-shadow">

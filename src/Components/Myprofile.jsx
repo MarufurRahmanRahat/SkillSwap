@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 
 import { AuthContext } from '../Contexts/AuthContext';
+import toast from 'react-hot-toast';
 
 const Myprofile = () => {
    const [isEditing, setIsEditing] = useState(false);
@@ -9,7 +10,7 @@ const Myprofile = () => {
     e.preventDefault();
     const displayName = e.target.name.value;
     const photoURL = e.target.photo.value;
-    // console.log(displayName,photoURL);
+    const notify = () => toast.success('Profile Updated!');
     const updatedData = {};
     if(photoURL){
       updatedData.photoURL=photoURL;
@@ -25,6 +26,7 @@ const Myprofile = () => {
                 ...updatedData
             }));
             setIsEditing(false);
+            notify();
             e.target.reset();
         }).catch((err) => {
             console.log('Update error:', err);

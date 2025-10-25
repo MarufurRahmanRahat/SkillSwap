@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import star from '../assets/star.png'
-import down from '../assets/down.png'
+
 
 const Appcard = ({ product }) => {
     const { rating, image, price, skillName, skillId } = product

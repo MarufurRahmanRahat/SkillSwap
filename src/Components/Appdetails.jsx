@@ -40,8 +40,7 @@ const Appdetails = () => {
         e.target.reset();
     
     
-    // setToast({ message: 'Session booked successfully!', type: 'success' });
-    // setFormData({ name: '', email: '' });
+   
   };
     
 
@@ -50,10 +49,10 @@ const Appdetails = () => {
 
     return (
         <div className=" bg-gray-50 py-8">
-            {/* {toast && <Toast message={toast.message} type={toast.type} onClose={() => setToast(null)} />} */}
+            
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <Link to='/'  className=" mb-6 flex items-center btn btn-primary">
+                <Link to='/'  className=" mb-6 flex items-center btn btn-secondary">
                     ← Back to Home
                 </Link>
 
@@ -113,7 +112,7 @@ const Appdetails = () => {
                                         required
                                     />
                                 </div>
-                                <button  type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 font-semibold">
+                                <button  type="submit" className="w-full text-white py-3 rounded-lg font-semibold btn btn-secondary">
                                     Book Session
                                     
                                 </button>

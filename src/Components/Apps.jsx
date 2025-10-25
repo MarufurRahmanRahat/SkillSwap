@@ -28,9 +28,7 @@ const Apps = () => {
 
                     }
                 </div>
-                {/* <div className="py-10 text-center">
-                    <Link className='btn btn-primary ' to='/apps'>Show All</Link>
-                </div> */}
+                
             </div>
         </div>
     );

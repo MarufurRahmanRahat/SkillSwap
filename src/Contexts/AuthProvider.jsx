@@ -6,6 +6,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { signInWithPopup } from 'firebase/auth';
+import toast from 'react-hot-toast';
 
 
 const googleProvider = new GoogleAuthProvider();
@@ -14,6 +15,7 @@ const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const notify = () => toast.success('Logged out successfully!');
 
 
     const createUser = (email, password) => {
@@ -33,6 +35,7 @@ const AuthProvider = ({ children }) => {
 
     const signOutUSer = () => {
         setLoading(true);
+        notify();
         return signOut(auth);
     }
 

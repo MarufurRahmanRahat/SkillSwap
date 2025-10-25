@@ -18,21 +18,21 @@ const HeroSection = () => {
       id: 1,
       title: "Learn New Skills Today",
       subtitle: "Connect with expert tutors in your local area",
-      image: "https://ibb.co.com/d4zpZwNP",
+      image: "https://cdn.pixabay.com/photo/2018/01/24/17/33/light-bulb-3104355_1280.jpg",
       buttonText: "Get Started"
     },
     {
       id: 2,
       title: "Share Your Expertise",
       subtitle: "Earn money teaching what you love",
-      image: "https://www.istockphoto.com/en/photo/business-colleagues-having-a-meeting-in-a-boardroom-gm1365567295-436384110",
+      image: "https://cdn.pixabay.com/photo/2016/01/08/14/38/coffee-1128134_1280.jpg",
       buttonText: "Become a Provider"
     },
     {
       id: 3,
       title: "Join Our Community",
       subtitle: "Thousands of skills waiting to be discovered",
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200",
+      image: "https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg",
       buttonText: "Explore Skills"
     },
     {
@@ -53,7 +53,7 @@ const HeroSection = () => {
         navigation
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         effect="fade"
@@ -83,7 +83,7 @@ const HeroSection = () => {
                   <p className="text-lg md:text-xl lg:text-2xl mb-8 animate-fade-in-up animation-delay-200">
                     {slide.subtitle}
                   </p>
-                  <button onClick={() => navigate('/apps')} className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 animate-fade-in-up animation-delay-400">
+                  <button onClick={() => navigate('/apps')} className="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 animate-fade-in-up animation-delay-400">
                     {slide.buttonText}
                   </button>
                 </div>

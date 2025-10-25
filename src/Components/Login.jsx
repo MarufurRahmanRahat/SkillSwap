@@ -2,6 +2,7 @@ import React, { use, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Contexts/AuthContext';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import toast from 'react-hot-toast';
 
 
 const Login = () => {
@@ -16,6 +17,8 @@ const Login = () => {
     const navigate = useNavigate();
 
     const { signInUser, signInWithGoogle } = use(AuthContext);
+    const notify = () => toast.success('Logged in successfully!');
+    
 
     const handleLogIn = event => {
         event.preventDefault();
@@ -29,6 +32,7 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 console.log('after login of a new user', result.user)
+                notify();
                 setSuccess(true);
                 event.target.reset();
                 navigate(location.state || '/');
@@ -36,6 +40,7 @@ const Login = () => {
             .catch(error => {
                 console.log('error happend', error.message)
                 setError(error.message);
+
             })
     }
 
@@ -44,6 +49,7 @@ const Login = () => {
         signInWithGoogle()
             .then(result => {
                 console.log(result.user);
+                notify();
                 navigate(location.state || '/');
             })
             .catch(error => {

@@ -2,6 +2,7 @@ import React, { use, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Contexts/AuthContext';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import toast from 'react-hot-toast';
 // import { createUserWithEmailAndPassword } from 'firebase/auth';
 // import { auth } from '../Firebase/Firebase.init';
 
@@ -13,6 +14,7 @@ const SignUp = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
+    const notify = () => toast.success('Registration successful!');
 
     const { createUser,signInWithGoogle,updateUser,user,setUser } = use(AuthContext);
 
@@ -59,7 +61,7 @@ const SignUp = () => {
         createUser(email, password)
             .then(result => {
                 console.log('after creation of a new user', result.user)
-                
+                notify();
                 updateUser({displayName: name, photoURL: photo})
                 .then(() =>{
                  setUser({...user,displayName: name, photoURL: photo})
@@ -84,6 +86,7 @@ const SignUp = () => {
         signInWithGoogle()
             .then(result => {
                 console.log(result.user);
+                notify();
                 navigate(location.state || '/');
             })
             .catch(error => {

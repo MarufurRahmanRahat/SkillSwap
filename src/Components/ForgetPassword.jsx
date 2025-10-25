@@ -3,12 +3,17 @@ import { sendPasswordResetEmail } from 'firebase/auth';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { auth } from '../Firebase/Firebase.init';
+import UseProducts from '../Hooks/UseProducts';
+import LoadingSpinner from './LoadingSpinner';
+import toast from 'react-hot-toast';
 
 const ForgetPassword = () => {
     const location = useLocation();
-
-
+    const { loading, } = UseProducts()
+    const notify = () => toast('Please check your email.');
     const [email, setEmail] = useState(location.state?.email || '');
+
+    if (loading) return <LoadingSpinner></LoadingSpinner>
 
 
 
@@ -20,7 +25,7 @@ const ForgetPassword = () => {
                 setTimeout(() => {
                     window.open('https://mail.google.com', '_blank');
                 }, 1500);
-                // alert('Please check your email.')
+                notify();
             })
             .catch(error => {
                 console.log(error);
@@ -58,10 +63,10 @@ const ForgetPassword = () => {
 
                     <div className="text-center mt-4">
                         <p className="mt-6 text-center text-sm text-gray-600">
-                            Remember your password? 
-                        <Link to="/login" className="link link-hover text-blue-600 hover:text-blue-700 font-medium">
-                              Login
-                        </Link>
+                            Remember your password?
+                            <Link to="/login" className="link link-hover text-blue-600 hover:text-blue-700 font-medium">
+                                Login
+                            </Link>
                         </p>
                     </div>
                 </div>
