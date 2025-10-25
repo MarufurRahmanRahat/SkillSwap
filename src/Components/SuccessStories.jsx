@@ -6,15 +6,15 @@ const SuccessStories = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-white mb-12">Success Stories</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg p-6">
+            <div className="bg-white rounded-lg p-6 animate__animated animate__bounceInDown hover:scale-105 transition-all ease-in-out duration-1000">
               <p className="text-gray-700 mb-4">"Learning guitar with Alex was amazing! I can now play my favorite songs."</p>
               <p className="font-semibold">- John Doe</p>
             </div>
-            <div className="bg-white rounded-lg p-6">
+            <div className="bg-white rounded-lg p-6 animate__animated animate__bounceInUp hover:scale-105 transition-all ease-in-out duration-1000">
               <p className="text-gray-700 mb-4">"The yoga classes helped me improve my flexibility and reduce stress."</p>
               <p className="font-semibold">- Jane Smith</p>
             </div>
-            <div className="bg-white rounded-lg p-6">
+            <div className="bg-white rounded-lg p-6 animate__animated animate__bounceInDown hover:scale-105 transition-all ease-in-out duration-1000">
               <p className="text-gray-700 mb-4">"I learned web development basics and built my first website!"</p>
               <p className="font-semibold">- Mike Johnson</p>
             </div>

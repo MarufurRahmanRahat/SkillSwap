@@ -9,12 +9,14 @@ import LoadingSpinner from './LoadingSpinner';
 import Error from './Error';
 import { BiDollar } from 'react-icons/bi';
 import { FaRegClock } from 'react-icons/fa';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Appdetails = () => {
 
 
     const { id } = useParams()
     const { products, loading } = UseProducts()
+    
 
 
     console.log(products);
@@ -31,10 +33,13 @@ const Appdetails = () => {
     console.log(product);
     if (loading) return <LoadingSpinner></LoadingSpinner>
 
-
+    const notify = () => toast.success('Session booked successfully!');
     const handleSubmit = (e) => {
-    e.preventDefault();
-    e.target.reset();
+        notify()
+       e.preventDefault();
+        e.target.reset();
+    
+    
     // setToast({ message: 'Session booked successfully!', type: 'success' });
     // setFormData({ name: '', email: '' });
   };
@@ -108,8 +113,9 @@ const Appdetails = () => {
                                         required
                                     />
                                 </div>
-                                <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 font-semibold">
+                                <button  type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 font-semibold">
                                     Book Session
+                                    
                                 </button>
                             </form>
                         </div>

@@ -30,7 +30,7 @@ const Home = () => {
                     }
                 </div>
                 <div className="py-10 text-center">
-                    <Link className='btn btn-primary bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)] ' to='/apps'>See All</Link>
+                    <Link className='btn btn-secondary animate-bounce ' to='/apps'>See All</Link>
                 </div>
             </div>
             <HowItWorks></HowItWorks>

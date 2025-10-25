@@ -63,7 +63,7 @@ const Login = () => {
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold animate__animated animate__bounceInDown">Login now!</h1>
                 </div>
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl animate__animated animate__bounceInUp">
                     <div className="card-body">
                         <form onSubmit={handleLogIn}>
                             <fieldset className="fieldset">

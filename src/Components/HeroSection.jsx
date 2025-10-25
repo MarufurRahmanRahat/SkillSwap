@@ -45,7 +45,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="hero-section">
+    <div className="hero-section ">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         spaceBetween={0}
@@ -72,7 +72,7 @@ const HeroSection = () => {
               />
 
 
-              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+              <div className="absolute inset-0  bg-opacity-50"></div>
 
 
               <div className="relative h-full flex items-center justify-center">
