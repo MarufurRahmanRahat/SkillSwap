@@ -26,7 +26,7 @@ const SignUp = () => {
         const name = event.target.name.value;
         const photo = event.target.photo.value;
 
-        console.log(name, photo);
+        // console.log(name, photo);
 
 
 
@@ -60,7 +60,7 @@ const SignUp = () => {
 
         createUser(email, password)
             .then(result => {
-                console.log('after creation of a new user', result.user)
+                // console.log('after creation of a new user', result.user)
                 notify();
                 updateUser({displayName: name, photoURL: photo})
                 .then(() =>{
@@ -85,7 +85,7 @@ const SignUp = () => {
         event.preventDefault();
         signInWithGoogle()
             .then(result => {
-                console.log(result.user);
+                // console.log(result.user);
                 notify();
                 navigate(location.state || '/');
             })

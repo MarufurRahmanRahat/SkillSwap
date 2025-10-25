@@ -31,7 +31,7 @@ const Login = () => {
 
         signInUser(email, password)
             .then(result => {
-                console.log('after login of a new user', result.user)
+                // console.log('after login of a new user', result.user)
                 notify();
                 setSuccess(true);
                 event.target.reset();
@@ -48,7 +48,7 @@ const Login = () => {
         event.preventDefault();
         signInWithGoogle()
             .then(result => {
-                console.log(result.user);
+                // console.log(result.user);
                 notify();
                 navigate(location.state || '/');
             })

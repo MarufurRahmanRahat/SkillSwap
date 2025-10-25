@@ -19,10 +19,10 @@ const Appdetails = () => {
     
 
 
-    console.log(products);
+    // console.log(products);
 
     const product = products ? products.find(p => String(p.skillId) === id) : undefined
-    console.log(product);
+    // console.log(product);
 
     if (!product) {
         return <Error></Error>;
@@ -30,7 +30,7 @@ const Appdetails = () => {
 
 
     const { image, skillName, providerName, description, price, rating,category,slotsAvailable,providerEmail } = product
-    console.log(product);
+    // console.log(product);
     if (loading) return <LoadingSpinner></LoadingSpinner>
 
     const notify = () => toast.success('Session booked successfully!');
