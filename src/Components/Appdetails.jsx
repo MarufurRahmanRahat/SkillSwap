@@ -10,12 +10,15 @@ import Error from './Error';
 import { BiDollar } from 'react-icons/bi';
 import { FaRegClock } from 'react-icons/fa';
 import toast, { Toaster } from 'react-hot-toast';
+import { use } from 'react';
+import { AuthContext } from '../Contexts/AuthContext';
 
 const Appdetails = () => {
 
 
     const { id } = useParams()
     const { products, loading } = UseProducts()
+    const { user } = use(AuthContext)
     
 
 
@@ -112,10 +115,18 @@ const Appdetails = () => {
                                         required
                                     />
                                 </div>
-                                <button  type="submit" className="w-full text-white py-3 rounded-lg font-semibold btn bg-blue-600 text-white">
-                                    Book Session
-                                    
-                                </button>
+                                {
+                                    user ?
+                                    <button  type="submit" className="w-full text-white py-3 rounded-lg font-semibold btn bg-blue-600 text-white">
+                                    Book Session 
+                                   </button>
+                                   :
+                                   <Link to='/login'><button  className="w-full text-white py-3 rounded-lg font-semibold btn bg-blue-600 text-white">
+                                    Log in to Book Session    
+                                </button></Link>
+
+                                }
+                                
                             </form>
                         </div>
                     </div>
