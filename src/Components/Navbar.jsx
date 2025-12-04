@@ -20,17 +20,17 @@ const Navbar = () => {
     }
 
     const links = <>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/">Home</NavLink></li>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/apps">All Skills</NavLink></li>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/about-us">About Us</NavLink></li>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/contacts">Contact</NavLink></li>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/myprofile">My Profile</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/">Home</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/apps">All Skills</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/about-us">About Us</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/contacts">Contact</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/myprofile">My Profile</NavLink></li>
     </>
     const links2 = <>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/">Home</NavLink></li>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/apps">All Skills</NavLink></li>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/about-us">About Us</NavLink></li>
-        <li><NavLink className='text-[20px] text-blue-600 font-sans font-semibold' to="/contacts">Contact</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/">Home</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/apps">All Skills</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/about-us">About Us</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/contacts">Contact</NavLink></li>
     </>
 
     return (
@@ -49,8 +49,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex justify-center items-center">
-                    <Link to='/'><DiSenchatouch className='w-8 h-8 text-blue-600' /></Link>
-                    <Link to='/' className=" hidden sm:block text-2xl text-blue-600 font-semibold">SkillSwap</Link>
+                    <Link to='/'><DiSenchatouch className='w-8 h-8' /></Link>
+                    <Link to='/' className=" hidden sm:block text-2xl font-semibold">SkillSwap</Link>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -74,7 +74,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {
-                    user ? <a onClick={handleSignOut} className="btn bg-blue-600 text-white text-[16px]">Log out</a>
+                    user ? <a onClick={handleSignOut} className="btn  bg-blue-600 text-white text-[16px]">Log out</a>
                         : <>
                             <Link className='btn bg-blue-600 text-white mr-1 text-[16px]' to='/login'>Login</Link>
                             <Link className='btn bg-blue-600 text-white text-[16px]' to='/signup'>SignUp</Link>

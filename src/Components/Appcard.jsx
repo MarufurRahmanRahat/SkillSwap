@@ -23,7 +23,7 @@ const Appcard = ({ product }) => {
                                 <img src={star} alt="" />{rating}</button>
                         </div>
                         <div className="text-center mt-4">
-                            <Link to={`/app-details/${skillId}`}className='btn btn-secondary w-full'>View Details
+                            <Link to={`/app-details/${skillId}`}className='btn bg-blue-600 text-white w-full'>View Details
                             </Link>
                         </div>
                     </div>

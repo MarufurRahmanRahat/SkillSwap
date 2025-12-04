@@ -31,7 +31,7 @@ const Home = () => {
                     }
                 </div>
                 <div className="py-10 text-center">
-                    <Link className='btn btn-secondary animate-bounce ' to='/apps'>See All</Link>
+                    <Link className='btn  bg-blue-600 text-white animate-bounce ' to='/apps'>See All</Link>
                 </div>
             </div>
             <HowItWorks></HowItWorks>

@@ -52,7 +52,7 @@ const Appdetails = () => {
             
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <Link to='/'  className=" mb-6 flex items-center btn btn-secondary">
+                <Link to='/'  className=" mb-6 flex items-center btn bg-blue-600 text-white">
                     ← Back to Home
                 </Link>
 
@@ -112,7 +112,7 @@ const Appdetails = () => {
                                         required
                                     />
                                 </div>
-                                <button  type="submit" className="w-full text-white py-3 rounded-lg font-semibold btn btn-secondary">
+                                <button  type="submit" className="w-full text-white py-3 rounded-lg font-semibold btn bg-blue-600 text-white">
                                     Book Session
                                     
                                 </button>
