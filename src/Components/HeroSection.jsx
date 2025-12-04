@@ -45,7 +45,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="hero-section ">
+    <div className="hero-section h-99">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         spaceBetween={0}
@@ -59,7 +59,7 @@ const HeroSection = () => {
         effect="fade"
         fadeEffect={{ crossFade: true }}
         loop={true}
-        className="h-[400px] md:h-[500px] lg:h-[600px]"
+        className="h-full"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
