@@ -1,8 +1,14 @@
 import React from 'react';
+import { DiSenchatouch } from 'react-icons/di';
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
         <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded px-10 py-20 ">
+            <div className="flex justify-center items-center">
+                    <Link to='/'><DiSenchatouch className='w-8 h-8' /></Link>
+                    <Link to='/' className=" text-2xl font-semibold">SkillSwap</Link>
+                </div>
             <nav className="grid grid-flow-col gap-4">
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
