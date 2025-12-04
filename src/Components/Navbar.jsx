@@ -20,17 +20,17 @@ const Navbar = () => {
     }
 
     const links = <>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/">Home</NavLink></li>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/apps">All Skills</NavLink></li>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/about-us">About Us</NavLink></li>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/contacts">Contact</NavLink></li>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/myprofile">My Profile</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/">Home</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/apps">All Skills</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/about-us">About Us</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/contacts">Contact</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/myprofile">My Profile</NavLink></li>
     </>
     const links2 = <>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/">Home</NavLink></li>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/apps">All Skills</NavLink></li>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/about-us">About Us</NavLink></li>
-        <li><NavLink className='text-[20px] text-[#363b3f] font-sans' to="/contacts">Contact</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/">Home</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/apps">All Skills</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/about-us">About Us</NavLink></li>
+        <li><NavLink className='text-[20px] text-[#363b3f] text-base-content font-sans font-semibold' to="/contacts">Contact</NavLink></li>
     </>
 
     return (

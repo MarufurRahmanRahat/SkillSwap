@@ -13,7 +13,7 @@ const Home = () => {
 
  const {products,loading,error} = UseProducts()
      if(loading) return <LoadingSpinner></LoadingSpinner>
-    const featuredProducts = products.slice(0, 6);
+    const featuredProducts = products.slice(0, 8);
 
     return (
        <div>
@@ -23,7 +23,7 @@ const Home = () => {
                     <h1 className='font-bold text-3xl md:text-5xl pb-4'>Popular Skills</h1>
                     <p className='font-normal text-[16px] sm:text-[20px] text-[#627382]'>Explore Our Trending Skills</p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
                     {
                         featuredProducts.map(product => (
                             <Appcard key={product.id} product={product} />
